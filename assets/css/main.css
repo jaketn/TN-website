@@ -1,0 +1,852 @@
+/* @font-face {
+font-family: AvenirLTStd-Book;
+src: url("fonts/AvenirLTStd-Book.otf");
+} */
+
+@media (min-width: 768px){
+  .navbar-nav>li>a {
+    padding-top:0px !important;
+  }
+}
+
+h1,h2,h3,h4,p, .container{
+  font-family: 'Nunito', sans-serif !important;
+  font-size: 1.5vw;
+}
+
+body{
+  background-image: url('transfernationwebblack1.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-size:contain;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.5vw;
+  color: #303030;
+}
+
+.spacing{
+  padding-top: 5vw;
+  padding-bottom: 10vw;
+}
+
+a{
+  text-decoration: none;
+  color: #303030;
+}
+
+a:hover{
+  text-decoration: none;
+  color: #303030;
+}
+
+.container h5{
+  font-size: 3.5vw;
+}
+
+.container-fluid h5{
+  font-size: 3.5vw;
+  font-family: 'Nunito', sans-serif;
+}
+
+
+/* Preloader */
+.spinner-wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: black;
+  z-index: 999999;
+}
+
+.spinner {
+  width: 1vw;
+  height: 1vw;
+  position: absolute;
+  top: 40%;
+  left: 35%;
+}
+
+.spinner img{
+  width: 30vw;
+}
+
+  /* Navigation Bar */
+  .navbar{
+    transition: 1s;
+    height: 5vw;
+    width: 105vw;
+  }
+
+  #navlinks a{
+    background: none;
+    transition: 1s;
+    color: grey;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  #navlinks a:hover{
+    background: none;
+    color: #4ecbd7 !important;
+    transition: 0.5s;
+  }
+
+  #navlinks{
+    padding-left:1vw;
+    transition: 0.5s;
+  }
+
+  .navbar li{
+    font-size: 1.2vw;
+    padding-left: 0.2vw;
+    padding-right: 0.2vw;
+    padding-top: 0.6vw;
+    text-decoration: none;
+    transition: 0.5s;
+  }
+
+  #brandlogo{
+    height:4.8vw;
+    min-height: 50px;
+  }
+
+  #myTopNav button{
+    top: -50px;
+    color: #303030;
+  }
+
+  #btnnavbar{
+    background: none;
+    transition: 1s;
+    color: grey;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    font-size: 1.2vw;
+    margin-top: -0.49vw;
+  }
+
+  #btnnavbar:hover{
+    background: none;
+    transition: 1s;
+    color: #4ecbd7 !important;
+    transition: 0.5s;
+    font-family: 'Nunito', sans-serif;
+    border: none;
+    font-size: 1.2vw;
+  }
+
+  /* Sidebar */
+  #sidebar{
+    float:right;
+    padding:0px;
+    margin:0px;
+    position:fixed;
+    right:-150px;
+    top:15vw;
+    width:210px;
+    z-index: 20;
+  }
+
+  #sidebar li{
+    height: 4vw;
+  }
+
+  #sidebar a{
+    decoration: none;
+
+  }
+
+  .fa{
+    background-color: rgba(48,48,48,0.6);
+  	height: 2vw;
+  	width: 2vw;
+  	border-radius:17px;
+  	border:1px solid white;
+  	text-align: center;
+  	padding-top: 0.39vw;
+  	color: white;
+  }
+
+  .fa:hover{
+    background-color: rgba(48,48,48,0.6);
+  	border:1px solid #4ecbd7;
+  	color: #4ecbd7;
+  }
+
+  #sidebar a:hover{
+    background-color: rgba(48,48,48,0);
+  }
+
+
+  /* Animation 1 */
+  .showcase{
+    width: 100%;
+    max-height: 50vw;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
+
+  .a1{
+    transition: 0.7s;
+  }
+
+  #anim1{
+    padding-left: 0;
+    padding-right: 0;
+    position: relative;
+  }
+
+  .ontopimg{
+    position: absolute;
+    top: 12vw;
+    left: 75vw;
+    transform: translate(-50%, -50%);
+    width: 40vw;
+  }
+
+
+  .pull-right h1{
+    font-size: 3.5vw;
+    font-weight:bold;
+    text-transform: capitalize;
+    color: grey;
+  }
+
+
+  /* Donor */
+  #donor{
+    background-color: rgba(235,235,235,1);
+    padding: 1vw 2vw 1vw 2vw;
+  }
+
+  #donorrow1 img{
+    width: 5vw;
+  }
+
+  #donorrow2 img{
+    width: 5vw;
+  }
+
+  .centered{
+    margin: 0 auto !important;
+    float: none !important;
+  }
+
+  #donorrow{
+    margin: 0 auto !important;
+    float: none !important;
+  }
+
+
+
+  /* We Know That */
+  .vl {
+      border-left: 1vw solid #5A5A5A;
+      border-left-style:dotted;
+      height: 46vw;
+      position: absolute;
+      left: 50%;
+      top: 83vw;
+  }
+
+  #weknowthat{
+    padding: 10vw 10vw 0vw 10vw;
+  }
+
+  #weknowthat div{
+    padding: 0.2vw;
+  }
+
+  #weknowthat h1{
+    font-size: 4.5vw;
+    letter-spacing:0.3vw;
+    padding-bottom: 3vw;
+  }
+
+  #weknowthat h2{
+    font-size: 3.5vw;
+    letter-spacing: 0.4vw;
+    color: #4ecbd7;
+    padding: 2vw 0vw 5vw 0vw;
+  }
+
+
+
+  #weknowthat img{
+    width: 10vw;
+  }
+
+  #wkttextback{
+    font-size: 1.8vw;
+    background-color: rgba(235,235,235,1);
+    border-radius: 2vw;
+    padding: 1vw 3vw 1vw 3vw !important;
+  }
+
+
+  /* Explanation */
+  #phone{
+    height: 30vw;
+    background-position: center;
+  }
+
+  #button1exp{
+    margin-right: 2vw;
+    margin-bottom: 0.7vw;
+  }
+
+  .btn-secondary{
+    width: 14vw;
+    padding: 1vw 0vw 1vw 0vw !important;
+    transition: all 0.5s;
+    cursor: pointer;
+    background-color: #4ecbd7;
+    border-radius: 5vw;
+    font-size: 1.5vw !important;
+    color: #ffffff;
+    white-space: normal;
+  }
+
+  .glyphicon{
+    padding: 0vw 0vw 0vw 0.8vw;
+  }
+
+  .a2{
+    transition: 0.7s;
+    background-color:rgba(235,235,235,1);
+    margin-bottom: 10vw;
+    padding: 2vw 0vw 0vw 0vw;
+  }
+
+  .a2 a:hover{
+    text-decoration: none;
+    color: #303030;
+  }
+
+  .a2 p{
+    padding: 0vw 0vw 0.5vw 0vw;
+    color: #303030;
+  }
+
+  .a2 h2{
+    font-size: 2.7vw;
+    color: #303030;
+  }
+
+
+  /* Animation 2 */
+  .a3{
+    transition: 0.7s;
+    margin-bottom: 10vw;
+  }
+
+  #float{
+    background-color: rgba(235,235,235,1);
+    padding: 1vw 0vw 1vw 0vw;
+    border-radius: 6vw;
+    -webkit-box-shadow: 0vw 0vw 5vw rgba(0,0,0,0.3);
+            box-shadow: 0vw 0vw 5vw rgba(0,0,0,0.3);
+  }
+
+  #float img{
+    border-radius: 5vw;
+  }
+
+  /* Press */
+  #pressspace{
+    width: 90%;
+  }
+
+  #pressspace img{
+    max-width: 18vw;
+    max-height: 18vw;
+  }
+
+  #pressback{
+    background-color: rgba(235,235,235,1);
+    padding: 2.5vw 0vw 6vw 0vw;
+    max-height: 29vw;
+  }
+
+  .carousel-inner .row{
+    margin-top: 0;
+  }
+
+  .carousel-inner{
+    margin-left: 5%;
+    margin-bottom: 15%;
+  }
+
+  .carousel-control.left, .carousel-control.right {
+      background-image: none !important;
+      width: 1%;
+  }
+
+  #wsjpic{
+    margin-top: 6vw;
+  }
+
+  #incpic{
+    margin-top: 4.5vw;
+  }
+
+  #pressback #marthapic{
+    max-height: 12vw;
+    margin-top: 2%;
+  }
+
+  #pressback #tankpic{
+    margin-top:3%;
+    width:18vw;
+  }
+
+  #pressback #lorealpic{
+    margin-top: 5vw;
+  }
+
+  /* About the Team */
+  #team{
+    margin-top: 3vw;
+  }
+  #teamspace{
+    margin-top: 0vw;
+    width: 90%;
+  }
+
+  #teamspace2{
+    width:60%;
+  }
+
+      @media (max-width: 576px) {
+        /* Mobile Body */
+        html, body {
+          max-width: 100%;
+          overflow-x: hidden;
+        }
+        /* Mobile Navbar */
+        nav{
+          display: none !important;
+        }
+
+        /* Animation 1 */
+        .showcase{
+          width: 100%;
+          max-height: 50vw;
+          background-position: center;
+          -webkit-background-size: cover;
+          -moz-background-size: cover;
+          -o-background-size: cover;
+          background-size: cover;
+          background-clip:
+        }
+
+        /* Mobile Donor */
+        #donor{
+          background-color: rgba(235,235,235,1);
+          height: 100px;
+        }
+
+        #donorrow1 img{
+          width: 30px !important;
+          height: 30px !important;
+        }
+
+        #donorrow2 img{
+          width: 25px;
+          height: 25px;
+        }
+
+        /* Mobile We Know That */
+        #weknowthat{
+          padding: 0 30px 0 30px;
+        }
+
+        #weknowthat h2, h3, h4, h5{
+          padding: 0px;
+          font-size: 18px;
+        }
+
+        #weknowthat p{
+          font-size: 13px !important;
+          padding: 5px;
+        }
+
+        #weknowthat img{
+          width: 72px;
+          margin-top: 30px;
+        }
+
+        .vl{
+          height: 580px;
+          top: 330px;
+        }
+
+        /* Mobile Explanation */
+        .a2 h2{
+          font-size: 25px;
+        }
+
+        .a2 p{
+          font-size: 18px;
+        }
+
+        .a2 img{
+          width: 62px;
+        }
+
+        #button1exp{
+          padding: 10px 0 10px 0 !important;
+          font-size: 15px !important;
+        }
+
+        /* Animation 2 */
+        .a3{
+          transition: 0.7s;
+          margin-bottom: 10vw;
+        }
+
+        #float{
+          background-color: rgba(235,235,235,1);
+          padding: 1vw 0vw 1vw 0vw;
+          border-radius: 6vw;
+          -webkit-box-shadow: 0vw 0vw 5vw rgba(0,0,0,0.3);
+                  box-shadow: 0vw 0vw 5vw rgba(0,0,0,0.3);
+        }
+
+        #float img{
+          border-radius: 5vw;
+        }
+
+        /* Press */
+        #pressspace h5{
+          font-size: 20px;
+        }
+
+        #pressspace{
+          width: 100%;
+          padding
+        }
+
+        #pressspace img{
+          max-width: 20vw;
+          max-height: 20vw;
+        }
+
+        #pressback{
+          background-color: rgba(235,235,235,1);
+          padding: 1vw 0vw 2vw 0vw;
+          max-height: 45vw;
+        }
+
+        .carousel-inner .row{
+          margin-top: 0%;
+
+        }
+
+        .carousel-inner{
+          margin-left: 2%;
+          margin-bottom: 15%;
+        }
+
+        .carousel-control.left, .carousel-control.right {
+            background-image: none !important;
+            width: 1%;
+        }
+
+        #wsjpic{
+          margin-top: 6vw;
+        }
+
+        #incpic{
+          margin-top: 4.5vw;
+        }
+
+        #pressback #marthapic{
+          max-height: 12vw;
+          margin-top: 2%;
+        }
+
+        #pressback #tankpic{
+          margin-top:3%;
+          width:18vw;
+        }
+
+        #pressback #lorealpic{
+          margin-top: 5vw;
+        }
+
+        /* Mobile Team */
+        #teamspace h5{
+          font-size: 20px;
+          padding-top: 20px;
+        }
+
+        #teamspace{
+          width: 100% !important;
+          margin: 5px 0 5px 0;
+        }
+
+        #teamspace2{
+          width: 100% !important;
+        }
+
+        #team h3{
+          font-size: 22px !important;
+        }
+
+        #team .backside p{
+          font-size: 20px !important;
+        }
+
+        .cardwspace {
+          height:400px;
+        }
+
+        #team .frontside p{
+          font-size: 18px !important;
+        }
+
+        #team .card {
+            height: 350px !important;
+            width: 260px !important;
+            border-radius: 50px !important;
+            padding: 20px 20px 20px 20px !important;
+            overflow: hidden;
+            overflow-y: scroll;
+        }
+
+        .frontside img{
+          height: 150px !important;
+          border-radius: 160px !important;
+          margin-top: 55px !important;
+        }
+
+        .frontside,
+        .backside {
+            height:350px !important;
+            width: 260px !important;
+            margin-left: 7vw;
+        }
+
+        /* Mobile Footer */
+        footer{
+          position:relative;
+          height: 200px;
+          width: 100%;
+          background-color: rgba(100,100,100,1) !important;
+          color: white;
+          padding: 0 0 0 0 !important;
+        }
+
+        .footer-copyright{
+          display: none;
+        }
+
+        footer p{
+          font-size: 15px !important;
+          background-color: rgba(100,100,100,1);
+          width: 100% !important;
+          padding: 0 2px 2px 10px;
+        }
+
+        footer h3{
+          font-size: 24px !important;
+          background-color: rgba(100,100,100,1);
+          width: 100%;
+        }
+
+        .footercontent4{
+          font-size: 18px !important;
+        }
+
+        /* Mobile Social Media */
+        #sidebar{
+          display: none;
+          width:210px;
+        }
+
+        #sidebar li{
+          height: 50px !important;
+        }
+
+        #sidebar a{
+          decoration: none;
+        }
+
+        .fa{
+          background-color: rgba(48,48,48,0.6);
+          height: 32px;
+          width: 32px;
+          border-radius:18px;
+          border:1px solid white;
+          text-align: center;
+          padding-top: 6px;
+          color: white;
+          font-size: 16px !important;
+        }
+
+        .fa:hover{
+          background-color: rgba(48,48,48,0.6);
+          border:1px solid #4ecbd7;
+          color: #4ecbd7;
+        }
+      }
+
+  #team .card {
+      background: rgba(235,235,235,1);
+      border-radius: 6vw;
+      padding: 2vw 2vw 3vw 2vw;
+      width: 100%;
+      height: 100%;
+  }
+
+  #team h3{
+    font-size: 1.7vw;
+    margin-top: 2vw;
+  }
+
+  .image-flip:hover .backside,
+  .image-flip.hover .backside {
+      -webkit-transform: rotateY(0deg);
+      -moz-transform: rotateY(0deg);
+      -o-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      transform: rotateY(0deg);
+      border-radius: 8vw;
+  }
+
+  .image-flip:hover .frontside,
+  .image-flip.hover .frontside {
+      -webkit-transform: rotateY(180deg);
+      -moz-transform: rotateY(180deg);
+      -o-transform: rotateY(180deg);
+      transform: rotateY(180deg);
+  }
+
+  .mainflip {
+      -webkit-transition: 1s;
+      -webkit-transform-style: preserve-3d;
+      -ms-transition: 1s;
+      -moz-transition: 1s;
+      -moz-transform: perspective(50vw);
+      -moz-transform-style: preserve-3d;
+      -ms-transform-style: preserve-3d;
+      transition: 1s;
+      transform-style: preserve-3d;
+      position: relative;
+  }
+
+  .frontside {
+      position:relative;
+      top: 0;
+      -webkit-transform: rotateY(0deg);
+      -ms-transform: rotateY(0deg);
+      z-index: 2;
+      margin-bottom: 3vw;
+  }
+
+  .backside {
+      position: absolute;
+      top: 0;
+      -webkit-transform: rotateY(-180deg);
+      -moz-transform: rotateY(-180deg);
+      -o-transform: rotateY(-180deg);
+      -ms-transform: rotateY(-180deg);
+      transform: rotateY(-180deg);
+  }
+
+  .frontside,
+  .backside {
+      -webkit-backface-visibility: hidden;
+      -moz-backface-visibility: hidden;
+      -ms-backface-visibility: hidden;
+      backface-visibility: hidden;
+      -webkit-transition: 1s;
+      -webkit-transform-style: preserve-3d;
+      -moz-transition: 1s;
+      -moz-transform-style: preserve-3d;
+      -o-transition: 1s;
+      -o-transform-style: preserve-3d;
+      -ms-transition: 1s;
+      -ms-transform-style: preserve-3d;
+      transition: 1s;
+      transform-style: preserve-3d;
+      width: 100%;
+      height: 100%;
+  }
+
+  .frontside .card,
+  .backside .card {
+      min-height: 22vw;
+  }
+
+  .backside .card a {
+      font-size: 1vw;
+      color: #4ecbd7;
+  }
+
+  .frontside .card .card-title,
+  .backside .card .card-title {
+      color: #4ecbd7;
+  }
+
+  .frontside img{
+    height: 14vw;
+    border-radius: 10vw;
+    margin-top: 2vw;
+  }
+
+  #team p{
+    font-size: 1.5vw;
+  }
+
+  .backside p{
+    font-size: 0.93vw !important;
+  }
+
+  .backside h3{
+    margin-top: 0 !important;
+  }
+
+  /* Footer */
+  footer{
+    background-color: rgba(0,0,0,0.4);
+    color: white;
+    padding: 0.1vw 0.1vw 0.1vw 0.5vw;
+    max-height: 20vw;
+  }
+
+  .footer-copyright{
+    color: white;
+    font-size: 1vw;
+    font-family: 'Nunito', sans-serif;
+  }
+
+  footer p{
+    font-size:1vw;
+  }
+
+  footer h3{
+    font-size: 1.5vw;
+  }
+
+  #footercontent1{
+    font-size:1vw;
+  }
+
+  #footercontent3{
+    padding:0.2vw 0.2vw 0.4vw;
+  }
+
+  footer a{
+    color: white;
+  }
+
+  footer a:hover{
+    color: white;
+  }
+}
