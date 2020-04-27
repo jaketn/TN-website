@@ -21,11 +21,22 @@ $(document).ready(function(){
 $(document).ready(function() {
   //Preloader
   $(window).on("load", function() {
-    preloaderFadeOutTime = 2000;
+    preloaderFadeOutTime = 1000;
     function hidePreloader() {
       var preloader = $('.spinner-wrapper');
       preloader.fadeOut(preloaderFadeOutTime);
     }
     hidePreloader();
   });
+  setTimeout(function () {
+     jQuery('#buttonToModal').trigger('click');
+  }, 1000);
 });
+
+
+
+// // Modal Popup on Open
+// $(document).ready(function () {
+//   //Fade in delay for the background overlay (control timing here)
+//   $("#myModal").modal('show').delay(5000).fadeIn(200);
+// });

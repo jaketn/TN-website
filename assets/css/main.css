@@ -1,25 +1,15 @@
-/* @font-face {
-font-family: AvenirLTStd-Book;
-src: url("fonts/AvenirLTStd-Book.otf");
-} */
-
-@media (min-width: 768px){
-  .navbar-nav>li>a {
-    padding-top:0px !important;
-  }
+html, body {
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
-
-h1,h2,h3,h4,p, .container{
-  font-family: 'Nunito', sans-serif !important;
-  font-size: 1.5vw;
-}
-
 body{
-  background-image: url('transfernationwebblack1.png');
+  background: linear-gradient(rgba(255,255,255,0.6), rgba(255,255,255,0.6)), url('transfernationwebblack1.png');
   background-attachment: fixed;
   background-position: center;
   background-size:contain;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Nunito', sans-serif !important;
   font-size: 1.5vw;
   color: #303030;
 }
@@ -45,9 +35,29 @@ a:hover{
 
 .container-fluid h5{
   font-size: 3.5vw;
-  font-family: 'Nunito', sans-serif;
 }
 
+/* Corona Modal */
+.modal-title{
+  font-size: 1.5vw;
+}
+.modal-body{
+  font-size: 1.2vw;
+}
+#buttonToModal {
+  display: none;
+}
+#donate-button{
+  background-color: #4ecbd7;
+  border: none;
+  width: 95%;
+  padding: 1vw 0;
+  font-size: 1.5vw;
+  transition: 0.2s ease;
+}
+#donate-button:hover{
+  color: black;
+}
 
 /* Preloader */
 .spinner-wrapper {
@@ -60,366 +70,368 @@ a:hover{
   z-index: 999999;
 }
 
-.spinner {
-  width: 1vw;
-  height: 1vw;
+/* Navigation Bar */
+.navbar{
+  transition: 1s;
+  height: 5vw;
+  width: 105vw;
+}
+
+#navlinks a{
+  background: none;
+  transition: 1s;
+  color: grey;
+}
+
+#navlinks a:hover{
+  background: none;
+  color: #4ecbd7 !important;
+  transition: 0.5s;
+}
+
+#navlinks{
+  padding-left:1vw;
+  transition: 0.5s;
+}
+
+.navbar li{
+  font-size: 1.2vw;
+  padding-left: 0.2vw;
+  padding-right: 0.2vw;
+  padding-top: 0.6vw;
+  text-decoration: none;
+  transition: 0.5s;
+}
+
+#brandlogo{
+  height:4.8vw;
+  min-height: 50px;
+}
+
+#myTopNav button{
+  top: -50px;
+  color: #303030;
+}
+
+#btnnavbar{
+  background: none;
+  transition: 1s;
+  color: grey;
+  border: none;
+  font-size: 1.2vw;
+  margin-top: -0.49vw;
+}
+
+#btnnavbar:hover{
+  background: none;
+  transition: 1s;
+  color: #4ecbd7 !important;
+  transition: 0.5s;
+  border: none;
+  font-size: 1.2vw;
+}
+
+/* Sidebar */
+#sidebar{
+  float:right;
+  padding:0px;
+  margin:0px;
+  position:fixed;
+  right:-150px;
+  top:15vw;
+  width:210px;
+  z-index: 20;
+}
+
+#sidebar li{
+  height: 4vw;
+}
+
+#sidebar a{
+  decoration: none;
+
+}
+
+.fa{
+  background-color: rgba(48,48,48,0.6);
+	height: 2vw;
+	width: 2vw;
+	border-radius:17px;
+	border:1px solid white;
+	text-align: center;
+	padding-top: 0.39vw;
+	color: white;
+}
+
+.fa:hover{
+  background-color: rgba(48,48,48,0.6);
+	border:1px solid #4ecbd7;
+	color: #4ecbd7;
+}
+
+#sidebar a:hover{
+  background-color: rgba(48,48,48,0);
+}
+
+
+/* Animation 1 */
+.showcase{
+  min-width: 100%;
+  min-height: 100%;
+}
+
+.landing-showcase {
+  position: relative;
+  top: -5vw;
+}
+
+.a1{
+  transition: 0.7s;
+}
+
+#anim1{
+  padding:0;
+}
+
+.ontopimg{
   position: absolute;
-  top: 40%;
-  left: 35%;
+  top: 12vw;
+  left: 75vw;
+  transform: translate(-50%, -50%);
+  width: 40vw;
 }
 
-.spinner img{
-  width: 30vw;
+
+.pull-right h1{
+  font-size: 3.5vw;
+  font-weight:bold;
+  text-transform: capitalize;
+  color: grey;
 }
 
-  /* Navigation Bar */
-  .navbar{
-    transition: 1s;
-    height: 5vw;
-    width: 105vw;
-  }
 
-  #navlinks a{
-    background: none;
-    transition: 1s;
-    color: grey;
-    font-family: 'Nunito', sans-serif;
-  }
+/* Donor */
+#donor{
+  position: relative;
+  top: -6vw;
+  background-color: rgba(235,235,235,1);
+  padding: 1vw 2vw 1vw 2vw;
+}
 
-  #navlinks a:hover{
-    background: none;
-    color: #4ecbd7 !important;
-    transition: 0.5s;
-  }
+#donorrow1 img{
+  width: 5vw;
+}
 
-  #navlinks{
-    padding-left:1vw;
-    transition: 0.5s;
-  }
+#donorrow2 img{
+  width: 5vw;
+}
 
-  .navbar li{
-    font-size: 1.2vw;
-    padding-left: 0.2vw;
-    padding-right: 0.2vw;
-    padding-top: 0.6vw;
-    text-decoration: none;
-    transition: 0.5s;
-  }
+.centered{
+  margin: 0 auto !important;
+  float: none !important;
+}
 
-  #brandlogo{
-    height:4.8vw;
-    min-height: 50px;
-  }
-
-  #myTopNav button{
-    top: -50px;
-    color: #303030;
-  }
-
-  #btnnavbar{
-    background: none;
-    transition: 1s;
-    color: grey;
-    font-family: 'Nunito', sans-serif;
-    border: none;
-    font-size: 1.2vw;
-    margin-top: -0.49vw;
-  }
-
-  #btnnavbar:hover{
-    background: none;
-    transition: 1s;
-    color: #4ecbd7 !important;
-    transition: 0.5s;
-    font-family: 'Nunito', sans-serif;
-    border: none;
-    font-size: 1.2vw;
-  }
-
-  /* Sidebar */
-  #sidebar{
-    float:right;
-    padding:0px;
-    margin:0px;
-    position:fixed;
-    right:-150px;
-    top:15vw;
-    width:210px;
-    z-index: 20;
-  }
-
-  #sidebar li{
-    height: 4vw;
-  }
-
-  #sidebar a{
-    decoration: none;
-
-  }
-
-  .fa{
-    background-color: rgba(48,48,48,0.6);
-  	height: 2vw;
-  	width: 2vw;
-  	border-radius:17px;
-  	border:1px solid white;
-  	text-align: center;
-  	padding-top: 0.39vw;
-  	color: white;
-  }
-
-  .fa:hover{
-    background-color: rgba(48,48,48,0.6);
-  	border:1px solid #4ecbd7;
-  	color: #4ecbd7;
-  }
-
-  #sidebar a:hover{
-    background-color: rgba(48,48,48,0);
-  }
+#donorrow{
+  margin: 0 auto !important;
+  float: none !important;
+}
 
 
-  /* Animation 1 */
-  .showcase{
-    width: 100%;
-    max-height: 50vw;
-    background-position: center;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
-    background-size: cover;
-  }
 
-  .a1{
-    transition: 0.7s;
-  }
-
-  #anim1{
-    padding-left: 0;
-    padding-right: 0;
-    position: relative;
-  }
-
-  .ontopimg{
+/* We Know That */
+.vl {
+    border-left: 1vw solid #5A5A5A;
+    border-left-style:dotted;
+    height: 40vw;
     position: absolute;
-    top: 12vw;
-    left: 75vw;
-    transform: translate(-50%, -50%);
-    width: 40vw;
-  }
+    left: 50%;
+    top: 85vw;
+}
+
+#weknowthat{
+  padding: 0vw 10vw 0vw 10vw;
+}
+
+#weknowthat div{
+  padding: 0.2vw;
+}
+
+#weknowthat h1{
+  font-size: 4.5vw;
+  letter-spacing:0.3vw;
+  padding-bottom: 3vw;
+}
+
+#weknowthat h2{
+  font-size: 3.5vw;
+  letter-spacing: 0.4vw;
+  color: #4ecbd7;
+  padding: 2vw 0vw 5vw 0vw;
+}
+
+#weknowthat img{
+  width: 10vw;
+}
+
+#wkttextback{
+  font-size: 1.8vw;
+  background-color: rgba(235,235,235,1);
+  border-radius: 2vw;
+  padding: 1vw 3vw 1vw 3vw !important;
+}
 
 
-  .pull-right h1{
-    font-size: 3.5vw;
-    font-weight:bold;
-    text-transform: capitalize;
-    color: grey;
-  }
+/* Explanation */
+#phone{
+  height: 30vw;
+  background-position: center;
+}
+
+#button1exp{
+  margin-right: 2vw;
+  margin-bottom: 0.7vw;
+}
+
+.btn-secondary{
+  width: 14vw;
+  padding: 1vw 0vw 1vw 0vw !important;
+  transition: all 0.5s;
+  cursor: pointer;
+  background-color: #4ecbd7;
+  border-radius: 5vw;
+  font-size: 1.5vw !important;
+  color: #ffffff;
+  white-space: normal;
+}
+
+.glyphicon{
+  padding: 0vw 0vw 0vw 0.8vw;
+}
+
+.a2{
+  transition: 0.7s;
+  background-color:rgba(235,235,235,1);
+  margin-bottom: 10vw;
+  padding: 2vw 0vw 0vw 0vw;
+}
+
+.a2 a:hover{
+  text-decoration: none;
+  color: #303030;
+}
+
+.a2 p{
+  padding: 0vw 0vw 0.5vw 0vw;
+  color: #303030;
+}
+
+.a2 h2{
+  font-size: 2.7vw;
+  color: #303030;
+}
+
+.exp-text{
+  font-size: 1.5vw;
+}
 
 
-  /* Donor */
-  #donor{
-    background-color: rgba(235,235,235,1);
-    padding: 1vw 2vw 1vw 2vw;
-  }
+/* Animation 2 */
+#animation-2-video {
+  border-radius: 6vw;
+}
+.a3{
+  transition: 0.7s;
+  margin-bottom: 10vw;
+}
 
-  #donorrow1 img{
-    width: 5vw;
-  }
+#float{
+  background-color: rgba(235,235,235,1);
+  padding: 1vw 0vw 1vw 0vw;
+  border-radius: 6vw;
+  -webkit-box-shadow: 0vw 0vw 5vw rgba(0,0,0,0.3);
+          box-shadow: 0vw 0vw 5vw rgba(0,0,0,0.3);
+}
 
-  #donorrow2 img{
-    width: 5vw;
-  }
+#float img{
+  border-radius: 5vw;
+}
 
-  .centered{
-    margin: 0 auto !important;
-    float: none !important;
-  }
+/* Press */
+#pressspace{
+  width: 90%;
+}
 
-  #donorrow{
-    margin: 0 auto !important;
-    float: none !important;
-  }
+#pressspace img{
+  max-width: 18vw;
+  max-height: 18vw;
+}
 
+#pressback{
+  background-color: rgba(235,235,235,1);
+  padding: 2.5vw 0vw 6vw 0vw;
+  max-height: 29vw;
+}
 
+.carousel-inner .row{
+  margin-top: 0;
+}
 
-  /* We Know That */
-  .vl {
-      border-left: 1vw solid #5A5A5A;
-      border-left-style:dotted;
-      height: 46vw;
-      position: absolute;
-      left: 50%;
-      top: 83vw;
-  }
+.carousel-inner{
+  margin-left: 5%;
+  margin-bottom: 15%;
+}
 
-  #weknowthat{
-    padding: 10vw 10vw 0vw 10vw;
-  }
+.carousel-control.left, .carousel-control.right {
+    background-image: none !important;
+    width: 1%;
+}
 
-  #weknowthat div{
-    padding: 0.2vw;
-  }
+#wsjpic{
+  margin-top: 6vw;
+}
 
-  #weknowthat h1{
-    font-size: 4.5vw;
-    letter-spacing:0.3vw;
-    padding-bottom: 3vw;
-  }
+#incpic{
+  margin-top: 4.5vw;
+}
 
-  #weknowthat h2{
-    font-size: 3.5vw;
-    letter-spacing: 0.4vw;
-    color: #4ecbd7;
-    padding: 2vw 0vw 5vw 0vw;
-  }
+#pressback #marthapic{
+  max-height: 12vw;
+  margin-top: 2%;
+}
 
+#pressback #tankpic{
+  margin-top:3%;
+  width:18vw;
+}
 
+#pressback #lorealpic{
+  margin-top: 5vw;
+}
 
-  #weknowthat img{
-    width: 10vw;
-  }
+#pressback #nytimespic{
+  margin-top: 10%;
+  margin-left: 20%;
+}
 
-  #wkttextback{
-    font-size: 1.8vw;
-    background-color: rgba(235,235,235,1);
-    border-radius: 2vw;
-    padding: 1vw 3vw 1vw 3vw !important;
-  }
+#pressback #ozypic{
+  width: 15vw;
+  margin-top: 10%;
+}
 
+#pressback
 
-  /* Explanation */
-  #phone{
-    height: 30vw;
-    background-position: center;
-  }
+/* About the Team */
+#team{
+  margin-top: 3vw;
+}
+#teamspace{
+  margin-top: 3vw;
+  width: 90%;
+}
 
-  #button1exp{
-    margin-right: 2vw;
-    margin-bottom: 0.7vw;
-  }
-
-  .btn-secondary{
-    width: 14vw;
-    padding: 1vw 0vw 1vw 0vw !important;
-    transition: all 0.5s;
-    cursor: pointer;
-    background-color: #4ecbd7;
-    border-radius: 5vw;
-    font-size: 1.5vw !important;
-    color: #ffffff;
-    white-space: normal;
-  }
-
-  .glyphicon{
-    padding: 0vw 0vw 0vw 0.8vw;
-  }
-
-  .a2{
-    transition: 0.7s;
-    background-color:rgba(235,235,235,1);
-    margin-bottom: 10vw;
-    padding: 2vw 0vw 0vw 0vw;
-  }
-
-  .a2 a:hover{
-    text-decoration: none;
-    color: #303030;
-  }
-
-  .a2 p{
-    padding: 0vw 0vw 0.5vw 0vw;
-    color: #303030;
-  }
-
-  .a2 h2{
-    font-size: 2.7vw;
-    color: #303030;
-  }
-
-
-  /* Animation 2 */
-  .a3{
-    transition: 0.7s;
-    margin-bottom: 10vw;
-  }
-
-  #float{
-    background-color: rgba(235,235,235,1);
-    padding: 1vw 0vw 1vw 0vw;
-    border-radius: 6vw;
-    -webkit-box-shadow: 0vw 0vw 5vw rgba(0,0,0,0.3);
-            box-shadow: 0vw 0vw 5vw rgba(0,0,0,0.3);
-  }
-
-  #float img{
-    border-radius: 5vw;
-  }
-
-  /* Press */
-  #pressspace{
-    width: 90%;
-  }
-
-  #pressspace img{
-    max-width: 18vw;
-    max-height: 18vw;
-  }
-
-  #pressback{
-    background-color: rgba(235,235,235,1);
-    padding: 2.5vw 0vw 6vw 0vw;
-    max-height: 29vw;
-  }
-
-  .carousel-inner .row{
-    margin-top: 0;
-  }
-
-  .carousel-inner{
-    margin-left: 5%;
-    margin-bottom: 15%;
-  }
-
-  .carousel-control.left, .carousel-control.right {
-      background-image: none !important;
-      width: 1%;
-  }
-
-  #wsjpic{
-    margin-top: 6vw;
-  }
-
-  #incpic{
-    margin-top: 4.5vw;
-  }
-
-  #pressback #marthapic{
-    max-height: 12vw;
-    margin-top: 2%;
-  }
-
-  #pressback #tankpic{
-    margin-top:3%;
-    width:18vw;
-  }
-
-  #pressback #lorealpic{
-    margin-top: 5vw;
-  }
-
-  /* About the Team */
-  #team{
-    margin-top: 3vw;
-  }
-  #teamspace{
-    margin-top: 0vw;
-    width: 90%;
-  }
-
-  #teamspace2{
-    width:60%;
-  }
+#teamspace2{
+  width:60%;
+}
 
       @media (max-width: 576px) {
         /* Mobile Body */
@@ -432,22 +444,34 @@ a:hover{
           display: none !important;
         }
 
+        /* Corona Modal */
+        .modal-title{
+          font-size: 8vw;
+        }
+        .modal-body{
+          font-size: 5vw;
+        }
+        #buttonToModal {
+          display: none;
+        }
+        #donate-button{
+          background-color: #4ecbd7;
+          border: none;
+          width: 90%;
+          padding: 5vw 0;
+          font-size: 6vw;
+        }
+
         /* Animation 1 */
         .showcase{
-          width: 100%;
-          max-height: 50vw;
-          background-position: center;
-          -webkit-background-size: cover;
-          -moz-background-size: cover;
-          -o-background-size: cover;
-          background-size: cover;
-          background-clip:
+          max-height: 56vw;
         }
 
         /* Mobile Donor */
         #donor{
           background-color: rgba(235,235,235,1);
           height: 100px;
+          top: -7vw;
         }
 
         #donorrow1 img{
@@ -481,8 +505,7 @@ a:hover{
         }
 
         .vl{
-          height: 580px;
-          top: 330px;
+          display: none;
         }
 
         /* Mobile Explanation */
